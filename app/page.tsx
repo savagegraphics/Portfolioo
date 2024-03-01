@@ -1,10 +1,13 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 type Props = {}
 
 const page = (props: Props) => {
   return (
-    <div>page</div>
+ <div className="">
+<Navbar/>
+ </div>
   )
 }
 
