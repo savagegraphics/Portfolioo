@@ -23,7 +23,8 @@ const config: Config = {
   }, 
   darkMode: "class",
   plugins: [nextui(),
-    require("flowbite/plugin")
+    require("flowbite/plugin"),
+    require('tailwindcss-animated')
   ],
 };
 export default config;
