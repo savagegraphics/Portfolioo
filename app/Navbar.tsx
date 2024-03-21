@@ -1,28 +1,23 @@
-// app/tabs/page.tsx
-
-import React from "react";
-import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
+import React, { Key } from "react";
+import { Tabs, Tab, Card, CardBody } from "@nextui-org/react"; // Import the Key type from React
 
 export default function App() {
-  const [selected, setSelected] = React.useState("photos");
+  const [selected, setSelected] = React.useState<Key>("photos" as Key); // Explicitly cast to Key type
+
+  const handleSelectionChange = (key: Key) => {
+    setSelected(key.toString()); // Convert Key to string if necessary
+  };
 
   return (
     <div className="flex w-full flex-col">
       <div className="flex justify-between my-4 mx-8">
-        {" "}
-        {/* Use justify-between to push items to the ends */}
         <div>
-          {" "}
-          {/* Left side content */}
           <h1>Title</h1>
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
-          {" "}
-          {/* Right side content */}
           <Tabs
             aria-label="Options"
-            selectedKey={selected}
-            onSelectionChange={setSelected}
+            onSelectionChange={handleSelectionChange}
             color="primary"
             variant="bordered"
           >
