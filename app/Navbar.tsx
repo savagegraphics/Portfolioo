@@ -12,7 +12,7 @@ export default function App() {
     <div className="flex w-full flex-col">
       <div className="flex justify-between my-4 mx-8">
         <div>
-          <h1>Title</h1>
+          <h1 className="mr-4">Toheeb Olawale RAJI</h1>
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
           <Tabs
