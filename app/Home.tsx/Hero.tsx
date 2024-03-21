@@ -10,7 +10,7 @@ const Hero = (props: Props) => {
           <h1 className="text-sm text-indigo-600 font-medium">
             Over 200 successful deals
           </h1>
-          <h2 className="text-4xl text-gray-800 font-extrabold md:text-5xl">
+          <h2 className="text-3xl text-gray-800 font-extrabold md:text-5xl">
             Hi👋🏽, <br />
             My Name is
             <br />

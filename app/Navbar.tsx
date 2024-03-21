@@ -36,7 +36,7 @@ export default function App() {
         </Tabs>
       </div>
       <div>
-        <Card className="rounded-xl mx-8">
+        <Card className="rounded-xl mx-8 my-6">
           <CardBody className="">
             {selected === "about" && (
               <div className="">
