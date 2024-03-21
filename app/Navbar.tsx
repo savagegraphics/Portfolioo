@@ -1,5 +1,6 @@
 import React, { Key } from "react";
 import { Tabs, Tab, Card, CardBody } from "@nextui-org/react"; // Import the Key type from React
+import Hero from "./Home.tsx/Hero";
 
 export default function App() {
   const [selected, setSelected] = React.useState<Key>("photos" as Key); // Explicitly cast to Key type
@@ -35,15 +36,12 @@ export default function App() {
         </Tabs>
       </div>
       <div>
-        <Card>
-          <CardBody>
+        <Card className="rounded-xl mx-8">
+          <CardBody className="">
             {selected === "about" && (
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
+              <div className="">
+                <Hero />
+              </div>
             )}
             {selected === "projects" && (
               <p>
