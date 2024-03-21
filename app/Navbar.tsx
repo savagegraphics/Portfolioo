@@ -3,6 +3,7 @@ import { Tabs, Tab, Card, CardBody } from "@nextui-org/react"; // Import the Key
 import Hero from "./Home.tsx/Hero";
 import Contact from "./Home.tsx/Contact";
 import Stack from "./Home.tsx/Stack";
+import Project from "./Home.tsx/Project";
 
 export default function App() {
   const [selected, setSelected] = React.useState<Key>("photos" as Key); // Explicitly cast to Key type
@@ -45,13 +46,8 @@ export default function App() {
                 <Hero />
               </div>
             )}
-            {selected === "stack" && (
-              <p>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.
-              </p>
-            )}
-            {selected === "projects" && <Stack />}
+            {selected === "stack" && <Stack />}
+            {selected === "projects" && <Project />}
             {selected === "contact" && (
               <div className="">
                 <Contact />
