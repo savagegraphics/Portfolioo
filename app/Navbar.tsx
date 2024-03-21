@@ -10,23 +10,29 @@ export default function App() {
 
   return (
     <div className="flex w-full flex-col">
-      <div className="flex justify-between my-4 mx-8">
-        <div>
-          <h1 className="mr-4">Toheeb Olawale RAJI</h1>
-        </div>
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <Tabs
-            aria-label="Options"
-            onSelectionChange={handleSelectionChange}
-            color="primary"
-            variant="bordered"
-          >
-            <Tab key="about" title="About" />
-            <Tab key="projects" title="Projects" />
-            <Tab key="stack" title="Tech Stack" />
-            <Tab key="contact" title="Contact" />
-          </Tabs>
-        </div>
+      <div>
+        <h1 className="mx-4 my-6">Toheeb Olawale RAJI</h1>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "flex-end",
+          marginRight: "10px",
+          marginBottom: "20px",
+        }}
+      >
+        <Tabs
+          aria-label="Options"
+          onSelectionChange={handleSelectionChange}
+          color="primary"
+          variant="bordered"
+        >
+          <Tab key="about" title="About" />
+          <Tab key="projects" title="Projects" />
+          <Tab key="stack" title="Tech Stack" />
+          <Tab key="contact" title="Contact" />
+        </Tabs>
       </div>
       <div>
         <Card>
