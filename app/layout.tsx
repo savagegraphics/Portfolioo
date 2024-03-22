@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Libre_Caslon_Display } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import { Providing } from "./providing";
 
 const libreCaslon = Libre_Caslon_Display({
   subsets: ["latin"],
@@ -21,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={libreCaslon.className}>
-        <Providers>{children}</Providers>
+        <Providing>
+          <Providers>{children}</Providers>
+        </Providing>
       </body>
     </html>
   );
