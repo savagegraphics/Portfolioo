@@ -2,6 +2,9 @@
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import React from 'react'
 import ProjCard from './ProjCard'
+import Cardy from './demo'
+import Card from './Card'
+import Card2 from './Card2'
 
 type Props = {}
 
@@ -18,17 +21,19 @@ const Project = (props: Props) => {
       <TabPanels>
         <TabPanel>
           <div className=''>
-            <ProjCard />
+            <Cardy />
+            <Card2 />
+            <Card />
           </div>
         </TabPanel>
         <TabPanel>
-          <ProjCard />
+          <Cardy />
         </TabPanel>
         <TabPanel>
-          <ProjCard />
+          <Card2 />
         </TabPanel>
         <TabPanel>
-          <ProjCard />
+          <Card />
         </TabPanel>
       </TabPanels>
     </Tabs>
