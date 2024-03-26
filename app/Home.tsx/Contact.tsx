@@ -77,7 +77,7 @@ const ContactFile = (props: Props) => {
   }
 
   return (
-    <div className='lg:mt-4 lg:mx-16 m-4 rounded-3xl lg-h-[650px] md-h-[580px] sm-h-[700px] max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8'>
+    <div className=''>
       <div className='max-w-2xl p-8 lg:max-w-5xl mx-auto'>
         <div className='text-left'>
           <h1 className='text-3xl font-bold text-gray-700 sm:text-4xl dark:text-white'>
