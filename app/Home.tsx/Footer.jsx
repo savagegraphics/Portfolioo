@@ -38,8 +38,8 @@ const Footer = () => {
     <footer className='text-gray-500 bg-white px-4 py-5 max-w-screen-xl mx-auto md:px-8'>
       <div className='max-w-4xl sm:mx-auto sm:text-center'>
         <img
-          src='https://www.floatui.com/logo.svg'
-          className='w-32 sm:mx-auto'
+          src='./walelogo.png'
+          className='w-44 h-24 sm:mx-auto'
           alt='Logo'
         />
         <p className='leading-relaxed mt-2 text-[15px]'>
