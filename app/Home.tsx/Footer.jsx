@@ -22,7 +22,7 @@ const footerNavs = [
     name: 'Careers'
   },
   {
-    href: 'javascript:void()',
+    href: '/',
     name: 'Support'
   }
 ]
