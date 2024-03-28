@@ -16,13 +16,6 @@ export default function App() {
   return (
     <div className="">
       <div className="flex w-full flex-col">
-        <div>
-          <img
-            src="./walelogo.png"
-            className="w-44 h-24 sm:mx-auto"
-            alt="Logo"
-          />{" "}
-        </div>
         <div
           style={{
             display: "flex",
@@ -30,6 +23,7 @@ export default function App() {
             justifyContent: "flex-end",
             marginRight: "20px",
             marginBottom: "20px",
+            marginTop: "20px",
           }}
         >
           <Tabs

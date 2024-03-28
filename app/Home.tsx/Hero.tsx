@@ -18,8 +18,13 @@ const Hero = (props: Props) => {
             <br />I build Front-End for the Web
           </h2>
           <p>
-            Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
-            doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+            As a frontend developer deeply rooted in the React.js and Next.js
+            ecosystems, I wield the power of cutting-edge technologies to craft
+            seamless digital experiences. With a blend of creativity and
+            technical prowess, I transform complex concepts into elegant
+            solutions. My dedication to innovation drives me to explore new
+            possibilities and push the boundaries of web development. Let&apos;s
+            collaborate to turn your ideas into captivating user experiences!
           </p>
           <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
             <a
