@@ -1,31 +1,5 @@
 import { useState, useEffect } from 'react'
-
-const footerNavs = [
-  {
-    href: 'javascript:void()',
-    name: 'About'
-  },
-  {
-    href: 'javascript:void()',
-    name: 'Blog'
-  },
-  {
-    href: 'javascript:void()',
-    name: ''
-  },
-  {
-    href: 'javascript:void()',
-    name: 'Team'
-  },
-  {
-    href: 'javascript:void()',
-    name: 'Careers'
-  },
-  {
-    href: '/',
-    name: 'Support'
-  }
-]
+import Link from 'next/link'
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState('')
@@ -36,12 +10,15 @@ const Footer = () => {
   }, [])
   return (
     <footer className='text-gray-500 bg-white px-4 py-5 max-w-screen-xl mx-auto md:px-8'>
+      <div className='text-left ml-6 mt-8 mb-4'>
+        <h2 className='text-xl md:text-2xl lg:text-3xl font-bold italic text-gray-800 dark:text-white'>
+          Toheeb Olawale RAJI
+        </h2>
+        <p className='text-xs md:text-md lg:text-sm text-gray-600 italic dark:text-gray-400'>
+          Front-End Dev
+        </p>
+      </div>
       <div className='max-w-4xl sm:mx-auto sm:text-center'>
-        <img
-          src='./walelogo.png'
-          className='w-44 h-24 sm:mx-auto'
-          alt='Logo'
-        />
         <p className='leading-relaxed mt-2 text-[15px]'>
           Specializing in frontend development with React and Next.js, I bring a
           passion for problem-solving and a commitment to delivering
@@ -52,13 +29,6 @@ const Footer = () => {
           projects and coding journey.
         </p>
       </div>
-      <ul className='items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0'>
-        {footerNavs.map((item, idx) => (
-          <li key={idx} className='hover:text-gray-800'>
-            <a href={item.href}>{item.name}</a>
-          </li>
-        ))}
-      </ul>
       <div className='mt-8 items-center justify-between sm:flex'>
         <div className='mt-4 sm:mt-0'>
           &copy; {currentYear} PROJECT SURVIVOR All rights reserved.
@@ -66,7 +36,7 @@ const Footer = () => {
         <div className='mt-6 sm:mt-0'>
           <ul className='flex items-center space-x-4'>
             <li className='w-10 h-10 border rounded-full flex items-center justify-center'>
-              <a href='javascript:void()'>
+              <Link href='https://twitter.com/savagedotjsx'>
                 <svg
                   data-testid='geist-icon'
                   height='16'
@@ -82,11 +52,11 @@ const Footer = () => {
                     fill='currentColor'
                   ></path>
                 </svg>
-              </a>
+              </Link>
             </li>
 
             <li className='w-10 h-10 border rounded-full flex items-center justify-center'>
-              <a href='javascript:void()'>
+              <Link href='https://github.com/savagegraphics'>
                 <svg
                   data-testid='geist-icon'
                   height='16'
@@ -109,11 +79,11 @@ const Footer = () => {
                     </clipPath>
                   </defs>
                 </svg>
-              </a>
+              </Link>
             </li>
 
             <li className='w-10 h-10 border rounded-full flex items-center justify-center'>
-              <a href='javascript:void()'>
+              <Link href='https://www.linkedin.com/in/toheeb-raji-b3a615235/'>
                 <svg
                   data-testid='geist-icon'
                   height='16'
@@ -130,27 +100,7 @@ const Footer = () => {
                     fill='currentColor'
                   ></path>
                 </svg>
-              </a>
-            </li>
-
-            <li className='w-10 h-10 border rounded-full flex items-center justify-center'>
-              <a href='javascript:void()'>
-                <svg
-                  data-testid='geist-icon'
-                  height='16'
-                  stroke-linejoin='round'
-                  viewBox='0 0 16 16'
-                  width='16'
-                  style={{ color: 'currentColor' }}
-                >
-                  <path
-                    fill-rule='evenodd'
-                    clip-rule='evenodd'
-                    d='M9.00319 15.9377C12.948 15.4442 16 12.0785 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 11.8172 2.67341 15.0099 6.25 15.808V10.4303H4.5V8H6.25V6.93969C6.25 4.22193 7.28461 2.96364 9.95128 2.96364C10.4559 2.96364 11.3277 3.06264 11.6854 3.16164V5.37163C11.497 5.35247 11.168 5.34289 10.7625 5.34289C9.45307 5.34289 9 5.8379 9 7.12812V8H11.5577L11.1106 10.4303H9.00319V15.9377Z'
-                    fill='currentColor'
-                  ></path>
-                </svg>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
