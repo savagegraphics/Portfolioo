@@ -8,7 +8,7 @@ type Props = {}
 const page = (props: Props) => {
   return (
     <div className=''>
-      <div className='text-center'>
+      <div className='text-left ml-6'>
         <h2 className='text-xl md:text-2xl lg:text-3xl font-bold italic text-gray-800 dark:text-white'>
           Toheeb Olawale RAJI
         </h2>
