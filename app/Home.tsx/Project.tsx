@@ -1,12 +1,12 @@
-"use client";
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
-import React from "react";
-import ProjCard from "./ProjCard";
-import Cardy from "./demo";
-import Card from "./Card";
-import Card2 from "./Card2";
+'use client'
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
+import React from 'react'
+import ProjCard from './ProjCard'
+import Cardy from './demo'
+import Card from './Card'
+import Card2 from './Card2'
 
-type Props = {};
+type Props = {}
 
 const Project = (props: Props) => {
   return (
@@ -15,12 +15,12 @@ const Project = (props: Props) => {
         <Tab>All</Tab>
         <Tab>Corporate</Tab>
         <Tab>E-commerce</Tab>
-        <Tab>Blog and Content</Tab>
+        <Tab>Single-Page</Tab>
       </TabList>
 
       <TabPanels>
         <TabPanel>
-          <div className="">
+          <div className=''>
             <Cardy />
             <Card2 />
             <Card />
@@ -37,10 +37,10 @@ const Project = (props: Props) => {
         </TabPanel>
       </TabPanels>
     </Tabs>
-  );
-};
+  )
+}
 
-export default Project;
+export default Project
 
 // import React, { useState } from "react";
 // import Link from "next/link";
