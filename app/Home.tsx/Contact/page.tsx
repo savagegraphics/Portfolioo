@@ -93,7 +93,7 @@ const ContactFile = (props: Props) => {
           <div className='divide-y divide-opacity-10 divide-12 divide-gray-400 dark:divide-gray-800'>
             <div className='flex gap-x-7 py-6'>
               <svg
-                className='flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200'
+                className='flex-shrink-0 w-6 h-6 mt-1.5 text-gray-400 dark:text-gray-200'
                 xmlns='http://www.w3.org/2000/svg'
                 width='16'
                 height='16'
@@ -115,7 +115,7 @@ const ContactFile = (props: Props) => {
 
             <div className='flex gap-x-7 py-6'>
               <svg
-                className='flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200'
+                className='flex-shrink-0 w-6 h-6 mt-1.5 text-gray-400 dark:text-gray-200'
                 xmlns='http://www.w3.org/2000/svg'
                 width='16'
                 height='16'
@@ -137,7 +137,7 @@ const ContactFile = (props: Props) => {
 
             <div className=' flex gap-x-7 py-6'>
               <svg
-                className='flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200'
+                className='flex-shrink-0 w-6 h-6 mt-1.5 text-gray-400 dark:text-gray-200'
                 xmlns='http://www.w3.org/2000/svg'
                 width='16'
                 height='16'
@@ -159,7 +159,7 @@ const ContactFile = (props: Props) => {
 
             <div className='flex gap-x-7 py-6'>
               <svg
-                className='flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200'
+                className='flex-shrink-0 w-6 h-6 mt-1.5 text-gray-400 dark:text-gray-200'
                 xmlns='http://www.w3.org/2000/svg'
                 width='16'
                 height='16'
@@ -175,7 +175,8 @@ const ContactFile = (props: Props) => {
                 <div className='flex flex-col items-center'>
                   <div className='flex items-center space-x-4'>
                     <div className='flex items-center'>
-                    <Link href='https://twitter.com/savagedotjsx'
+                      <Link
+                        href='https://twitter.com/savagedotjsx'
                         className='text-gray-300 transition-colors duration-300 hover:text-deep-purple-accent-400'
                       >
                         <svg
