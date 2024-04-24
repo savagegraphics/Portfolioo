@@ -30,10 +30,10 @@ const Hero = (props: Props) => {
           </p>
           <div className='items-center gap-x-3 space-y-3 sm:flex sm:space-y-0'>
             <Link
-              href='/Home.tsx/Contact'
+              href='https://drive.google.com/file/d/1uhZpW2adf_7VpVe7_jzdGDEcO-Ksobdt/view?usp=drivesdk'
               className='block py-2 px-4 text-center text-white font-medium bg-indigo-600 duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow-lg hover:shadow-none'
             >
-              Get In Touch
+              Download CV
             </Link>
           </div>
         </div>
